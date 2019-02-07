@@ -26,3 +26,7 @@ I'm referring to this as the "pace compatibility" problem, or sometimes the "mul
      - reshape the spectrogram, adding a dimension, so that the time segment associated with each beat has a separate row, and
      - associate the result with the binary label as to whether the candidate tempo is correct for the song.
 8. Train a binary classifier to distinguish correct and incorrect tempos.
+
+## Notes
+
+This repo includes the hand-labeled pace data but not most of the audio input data (because copyrights etc.).  Hopefully there is enough information for someone to reproduce the procedure using different audio data, supplying their own labels.
