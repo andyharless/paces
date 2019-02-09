@@ -69,3 +69,4 @@ Terminological note: I have started using the word "megabatch" to refer to large
 - Add description of results to this readme.
 - Try adjusting tempo tolerance.
 - Improve code documentation.
+- Consider implementing [stochastic weight averaging](https://pechyonkin.me/stochastic-weight-averaging/) or a similar strategy.
