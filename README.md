@@ -38,13 +38,23 @@ Terminological note: I have started using the word "megabatch" to refer to large
 - Address class imbalance. Maybe re-create megabatch files with balanced classes and re-train.
 - Procedure for incorporating new data. Maybe:
     - divide each new chunk of songs 60/20/20 for train/validate/test
-    - create new megabatch files using both old and new data
+    - create new megabatch files including both old and new data
     - re-train on training cases from new megabatch files
     - possibly adjust hyperparameters or network structure
     - look at test data results
-- Include metadata (e.g. music genre, the candidate tempo itself) by using branched network.
+    - keep notes on how much improvement comes from each data update
+- Include metadata (e.g. music genre, the candidate tempo itself) in model by using branched network.
 - Look at results per song. Subjectively, how does model do at getting correct paces?
-- Look at validation results to see if some music genres work better than others.
-- Balance training/validation/test data according to music genre.
-- Get more data for underrepresented genres.
+- Look at validation results to see if some music genres work better than others.  Do "active learning" by adding new training cases from more difficult genres.
+- Balance training/validation/test data according to music genre. And artist.
+- Get more data for underrepresented genres. And a greater variety of artists.
 - Get data from other human labelers.
+- Revise model experiment code:
+    - Run each model multiple times with different random seeds.
+    - Generate network from lists of hyperparameters instead of manually revising network code for each experiment.
+- Revise best model code:
+    - Run multiple times with different random seeds, and combine results (how? mean? logit mean? median? ?).
+    - Save fitted weights for future inference.
+- Add file descriptions to this readme.
+- Study how to combine models. (What works best? mean probability? logit mean? median? something else?)
+- Add analyses, descriptions, etc. to conform to Springboard requirements.
