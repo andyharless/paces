@@ -70,3 +70,4 @@ Terminological note: I have started using the word "megabatch" to refer to large
 - Try adjusting tempo tolerance.
 - Improve code documentation.
 - Consider implementing [stochastic weight averaging](https://pechyonkin.me/stochastic-weight-averaging/) or a similar strategy.
+- Consider using cross-validation (with a separate megabatch file for each fold) instead of holdout validation.
