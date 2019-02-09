@@ -30,3 +30,18 @@ I'm referring to this as the "pace compatibility" problem, or sometimes the "mul
 ## Notes
 
 This repo includes the hand-labeled pace data but not most of the audio input data (because copyrights etc.).  Hopefully there is enough information for someone to reproduce the procedure using different audio data, supplying their own labels.
+
+Terminological note: I have started using the word "megabatch" to refer to large files of cases (training, validation, or test, in separate files) ready to feed into the model.  Originally I used a data generator to generate batches on demand, but this proved too slow (since I wanted to look at model iterations in real time).  Since I'd already written the code to create batches, I just set the batch size to huge and created a file from a single "batch", which I call a "megabatch."  The generator then just samples cases from the megabatch files to create actual training batches etc..
+
+## Issues and Ideas
+
+- Address class imbalance. Maybe re-create megabatch files with balanced classes and re-train.
+- Procedure for incorporating new data. Maybe:
+    - divide each new chunk of songs 60/20/20 for train/validate/test
+    - create new megabatch files using both old and new data
+    - re-train on training cases from new megabatch files
+    - possibly adjust hyperparameters or network structure
+    - look at test data results
+- Include metadata (e.g. music genre, the candidate tempo itself) by using branched network.
+- Look at results per song. Subjectively, how does model do at getting correct paces?
+- Look at validation results to see if some music genres work better than others.
