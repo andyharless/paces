@@ -45,3 +45,6 @@ Terminological note: I have started using the word "megabatch" to refer to large
 - Include metadata (e.g. music genre, the candidate tempo itself) by using branched network.
 - Look at results per song. Subjectively, how does model do at getting correct paces?
 - Look at validation results to see if some music genres work better than others.
+- Balance training/validation/test data according to music genre.
+- Get more data for underrepresented genres.
+- Get data from other human labelers.
