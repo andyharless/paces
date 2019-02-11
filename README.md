@@ -35,7 +35,16 @@ Terminological note: I have started using the word "megabatch" to refer to large
 
 ## Files
 
-[Section to be added]
+`pace_params.py`: parameters used by other files  
+`songs20190129.csv`: pace labels used for training and validation of initial ("Stage 0") model  
+`SongsSliceDiceSetsWork2.ipynb`: code to process each song into spectrogram and candidate tempos  
+`get_training_data.py`: code to sample clips from songs and associate each clip with a candidate tempo  
+`SaveMegabatch.ipynb`: code to standardize clips for use as training/validation data and produce large files thereof  
+`BestStage0Model.ipynb`: code to train and validate the best model  
+  
+`ExploreMegabatch.ipynb`: code to examine the training data with an eye to preprocessing  
+`ModelExperiments.ipynb`: messy code used to run different versions of the model ("how the sausage is made")  
+`TrueFalseExamples.ipynb`: code to visualize examples of positive and negative training cases  
 
 ## Results
 
@@ -63,7 +72,7 @@ Terminological note: I have started using the word "megabatch" to refer to large
 - Revise best model code:
     - Run multiple times with different random seeds, and combine results (how? mean? logit mean? median? ?).
     - Save fitted weights for future inference.
-- Add file descriptions to this readme.
+- (done) ~Add file descriptions to this readme.~
 - Study how to combine models. (What works best? mean probability? logit mean? median? something else?)
 - Add analyses, descriptions, etc. to conform to Springboard requirements.
 - Add description of results to this readme.
@@ -71,3 +80,4 @@ Terminological note: I have started using the word "megabatch" to refer to large
 - Improve code documentation.
 - Consider implementing [stochastic weight averaging](https://pechyonkin.me/stochastic-weight-averaging/) or a similar strategy.
 - Consider using cross-validation (with a separate megabatch file for each fold) instead of holdout validation.
+- Clean up code (e.g. so parameters are all in parameter file instead of some defined explicitly elsewhere)
