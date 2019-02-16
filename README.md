@@ -82,3 +82,4 @@ Terminological note: I have started using the word "megabatch" to refer to large
 - Consider using cross-validation (with a separate megabatch file for each fold) instead of holdout validation.
 - Clean up code (e.g. so parameters are all in parameter file instead of some defined explicitly elsewhere)
 - 3-d convolutions?
+- Run with publicly available audio inputs (which need to be labeled first), so the project could be forked and run immediately by someone else.
