@@ -35,7 +35,7 @@ Terminological note: I have started using the word "megabatch" to refer to large
 
 ## Files
 
-`pace_params.py`: parameters used by other files  similar to
+`pace_params.py`: parameters used by other files   
 `songs20190129.csv`: pace labels used for training and validation of initial ("Stage 0") model  
 `SongsSliceDiceSetsWork2.ipynb`: code to process each song into spectrogram and candidate tempos  
 `get_training_data.py`: code to sample clips from songs and associate each clip with a candidate tempo  
