@@ -41,11 +41,12 @@ Terminological note: I have started using the word "megabatch" to refer to large
 `get_training_data.py`: code to sample clips from songs and associate each clip with a candidate tempo  
 `SaveMegabatch.ipynb`: code to standardize clips for use as training/validation data and produce large files thereof  
 `BestStage0Model.ipynb`: code to train and validate the best model  
-  
-`ExploreMegabatch.ipynb`: code to examine the training data with an eye to preprocessing  
-`ModelExperiments.ipynb`: messy code used to run different versions of the model ("how the sausage is made")  
-`TrueFalseExamples.ipynb`: code to visualize examples of positive and negative training cases  
 
+`eda.ipynb` : code to examine the training data with an eye to preprocessing and visualizing positive/negative examples  
+`small_sample.pkl.gz`: data sampled by eda.ipynb  
+`medium_sample.pkl.gz`: data sampled by eda.ipynb  
+`ModelExperiments.ipynb`: messy code used to run different versions of the model ("how the sausage is made")  
+ 
 ## Results
 
 [Section to be added]
