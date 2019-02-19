@@ -35,7 +35,7 @@ Terminological note: I have started using the word "megabatch" to refer to large
 
 ## Files
 
-`pace_params.py`: parameters used by other files  
+`pace_params.py`: parameters used by other files  similar to
 `songs20190129.csv`: pace labels used for training and validation of initial ("Stage 0") model  
 `SongsSliceDiceSetsWork2.ipynb`: code to process each song into spectrogram and candidate tempos  
 `get_training_data.py`: code to sample clips from songs and associate each clip with a candidate tempo  
@@ -49,7 +49,7 @@ Terminological note: I have started using the word "megabatch" to refer to large
  
 ## Results
 
-[Section to be added]
+Validation accuracy is about 91% for the best model so far, and it appears to be making a generally reasonable set of predictions (e.g. not heavily biased toward the modal category).  See [BestStage0Model.ipynb](BestStage0Model.ipynb).  Considering many cases are ambiguous, this is quite good performance, such as it is, but the usual caveats apply.  (The hyperparameters may have been overfit to the validation set; the validation set—different songs but some by the same artisits and in similar styles—may be too much like the training set; there may be particular types of songs with which the model has difficulty; yada, yada, yada.)  Real testing, including better performance measures, is still to come.
 
 ## Issues and Ideas
 
