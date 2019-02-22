@@ -84,3 +84,4 @@ Validation accuracy is about 91% for the best model so far, and it appears to be
 - Clean up code (e.g. so parameters are all in parameter file instead of some defined explicitly elsewhere)
 - 3-d convolutions?
 - Run with publicly available audio inputs (which need to be labeled first), so the project could be forked and run immediately by someone else.
+- Try to come up with more sophisticated [preprocessing methods](https://www.linkedin.com/pulse/preprocessing-neural-network-inputs-andrew-harless)
