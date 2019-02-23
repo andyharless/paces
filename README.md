@@ -53,6 +53,14 @@ Terminological note: I have started using the word "megabatch" to refer to large
 
 Validation accuracy is about 91% for the best model so far, and it appears to be making a generally reasonable set of predictions (e.g. not heavily biased toward the modal category).  See [BestStage0Model.ipynb](BestStage0Model.ipynb).  Considering many cases are ambiguous, this is quite good performance, such as it is, but the usual caveats apply.  (The hyperparameters may have been overfit to the validation set; the validation set—different songs but some by the same artisits and in similar styles—may be too much like the training set; there may be particular types of songs with which the model has difficulty; yada, yada, yada.)  Real testing, including better performance measures, is still to come.
 
+## What I Think Is Cool About This
+
+- Same music can be interpreted as more than one tempo
+- Data augmentation via phase sampling (same song, different data)
+- Two-dimensional time
+- Narrow convolutions
+- Alternating batch normalization and dropout between successive convolutional layers
+
 ## Issues and Ideas
 
 - Address class imbalance. Maybe re-create megabatch files with balanced classes and re-train.
