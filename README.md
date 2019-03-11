@@ -46,10 +46,20 @@ Terminological note: I have started using the word "megabatch" to refer to large
 `small_sample.pkl.gz`: data sampled by eda.ipynb  
 `medium_sample.pkl.gz`: data sampled by eda.ipynb  
 `ModelExperiments.ipynb`: messy code used to run different versions of the model ("how the sausage is made")  
+`Project proposal.pdf`: description of project (for Springboard)  
+`wrangling.pdf`: description of how data were prepared  
  
 ## Results
 
 Validation accuracy is about 91% for the best model so far, and it appears to be making a generally reasonable set of predictions (e.g. not heavily biased toward the modal category).  See [BestStage0Model.ipynb](BestStage0Model.ipynb).  Considering many cases are ambiguous, this is quite good performance, such as it is, but the usual caveats apply.  (The hyperparameters may have been overfit to the validation set; the validation set—different songs but some by the same artisits and in similar styles—may be too much like the training set; there may be particular types of songs with which the model has difficulty; yada, yada, yada.)  Real testing, including better performance measures, is still to come.
+
+## What I Think Is Cool About This
+
+- Same music can be interpreted as more than one tempo
+- Data augmentation via phase sampling (same song, different data)
+- Two-dimensional time
+- Narrow convolutions
+- Alternating batch normalization and dropout between successive convolutional layers
 
 ## Issues and Ideas
 
@@ -75,8 +85,8 @@ Validation accuracy is about 91% for the best model so far, and it appears to be
     - Save fitted weights for future inference.
 - (done) ~Add file descriptions to this readme.~
 - Study how to combine models. (What works best? mean probability? logit mean? median? something else?)
-- Add analyses, descriptions, etc. to conform to Springboard requirements.
-- Add description of results to this readme.
+- (partly done) Add analyses, descriptions, etc. to conform to Springboard requirements.
+- (done) ~Add description of results to this readme.~
 - Try adjusting tempo tolerance.
 - Improve code documentation.
 - Consider implementing [stochastic weight averaging](https://pechyonkin.me/stochastic-weight-averaging/) or a similar strategy.
