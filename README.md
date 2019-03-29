@@ -47,7 +47,7 @@ Terminological note: I have started using the word "megabatch" to refer to large
 `data/medium_sample.pkl.gz`: data sampled by eda.ipynb  
 `code/ModelExperiments.ipynb`: messy code used to run different versions of the model ("how the sausage is made")  
 `docs/Project proposal.pdf`: description of project (for Springboard)  
-`docs/milestone.pdf` : report on initial phases of project (for Springboard)
+`docs/milestone.pdf` : report on initial phases of project (for Springboard)  
 `docs/wrangling.pdf`: description of how data were prepared
 
  
