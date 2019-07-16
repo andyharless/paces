@@ -1,4 +1,4 @@
-# paces
+# Muisc Pace Compatibility Project
 
 ## The Problem
 
@@ -92,7 +92,7 @@ Validation accuracy is about 91% for the best model so far, and it appears to be
     - Save fitted weights for future inference.
 - (done) ~Add file descriptions to this readme.~
 - Study how to combine models. (What works best? mean probability? logit mean? median? something else?)
-- (partly done) Add analyses, descriptions, etc. to conform to Springboard requirements.
+- (done) ~Add analyses, descriptions, etc. to conform to Springboard requirements.~
 - (done) ~Add description of results to this readme.~
 - Try adjusting tempo tolerance.
 - Improve code documentation.
