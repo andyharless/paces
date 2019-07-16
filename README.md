@@ -37,16 +37,16 @@ Terminological note: I have started using the word "megabatch" to refer to large
 
 `code/pace_params.py`: parameters used by other files   
 `data/songs20190129.csv`: pace labels used for training and validation of initial ("Stage 0") model  
-`code/SongsSliceDiceSetsWork2.ipynb` ([view in nbviewer](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/SongsSliceDiceSetsWork2.ipynb)): process each song into spectrogram and candidate tempos  
+`code/SongsSliceDiceSetsWork2.ipynb` ([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/SongsSliceDiceSetsWork2.ipynb)): process each song into spectrogram and candidate tempos  
 `code/get_training_data.py`: sample clips from songs and associate each clip with a candidate tempo  
-`code/SaveMegabatch.ipynb`([view in nbviewer](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/SaveMegabatch.ipynb)): standardize clips for use as training/validation data and produce large files thereof  
-`code/BestStage0Model.ipynb`([view in nbviewer](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/BestStage0Model.ipynb)): train and validate the best model  
+`code/SaveMegabatch.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/SaveMegabatch.ipynb)): standardize clips for use as training/validation data and produce large files  
+`code/BestStage0Model.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/BestStage0Model.ipynb)): train and validate the best model  
 
-`code/eda.ipynb` ([view in nbviewer](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/eda.ipynb)): examine training data with an eye to preprocessing and visualizing positive/negative examples  
+`code/eda.ipynb` ([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/eda.ipynb)): examine training data with an eye to preprocessing and visualization  
 `data/small_sample.pkl.gz`: data sampled by eda.ipynb  
 `data/medium_sample.pkl.gz`: data sampled by eda.ipynb  
-`code/ModelExperiments.ipynb`([view in nbviewer](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/ModelExperiments.ipynb)): messy code used to run different versions of the model ("how the sausage is made")
-`code/inferential.ipynb`([view in nbviewer](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/inferential.ipynb)): some hypothesis tests
+`code/ModelExperiments.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/ModelExperiments.ipynb)): messy code used to run different versions of the model ("how the sausage is made")  
+`code/inferential.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/inferential.ipynb)): some hypothesis tests  
 `docs/Project proposal.pdf`: description of project (for Springboard)  
 `docs/milestone.pdf` : report on initial phases of project (for Springboard)  
 `docs/wrangling.pdf`: description of how data were prepared
