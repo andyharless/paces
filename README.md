@@ -45,7 +45,7 @@ Terminological note: I have started using the word "megabatch" to refer to large
 `code/eda.ipynb` ([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/eda.ipynb)): examine training data with an eye to preprocessing and visualization  
 `data/small_sample.pkl.gz`: data sampled by eda.ipynb  
 `data/medium_sample.pkl.gz`: data sampled by eda.ipynb  
-`code/ModelExperiments.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/ModelExperiments.ipynb)): messy code used to run different versions of the model ("how the sausage is made")  
+`code/ModelExperiments.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/ModelExperiments.ipynb)): messy code to run various versions of the model ("how the sausage is made")  
 `code/inferential.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/inferential.ipynb)): some hypothesis tests  
 `docs/Project proposal.pdf`: description of project (for Springboard)  
 `docs/milestone.pdf` : report on initial phases of project (for Springboard)  
