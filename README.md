@@ -1,4 +1,4 @@
-# paces
+# Muisc Pace Compatibility Project
 
 ## The Problem
 
@@ -34,6 +34,7 @@ This repo includes the hand-labeled pace data but not most of the audio input da
 Terminological note: I have started using the word "megabatch" to refer to large files of cases (training, validation, or test, in separate files) ready to feed into the model.  Originally I used a data generator to generate batches on demand, but this proved too slow (since I wanted to look at model iterations in real time).  Since I'd already written the code to create batches, I just set the batch size to huge and created a file from a single "batch", which I call a "megabatch."  The generator then just samples cases from the megabatch files to create actual training batches etc..
 
 ## Files
+including outside links for files that often don't display well on GitHub
 
 `code/pace_params.py`: parameters used by other files   
 `data/songs20190129.csv`: pace labels used for training and validation of initial ("Stage 0") model  
@@ -47,9 +48,12 @@ Terminological note: I have started using the word "megabatch" to refer to large
 `data/medium_sample.pkl.gz`: data sampled by eda.ipynb  
 `code/ModelExperiments.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/ModelExperiments.ipynb)): messy code to try versions of the model ("how the sausage is made")  
 `code/inferential.ipynb`([jupyter view](https://nbviewer.jupyter.org/github/andyharless/paces/blob/master/code/inferential.ipynb)): some hypothesis tests  
-`docs/Project proposal.pdf`: description of project (for Springboard)  
-`docs/milestone.pdf` : report on initial phases of project (for Springboard)  
-`docs/wrangling.pdf`: description of how data were prepared
+`docs/Project proposal.pdf` ([web view](https://andy.harless.us/paces/docs/Project%20proposal.pdf)): description of project (for Springboard)  
+`docs/milestone.pdf` ([web view](https://andy.harless.us/paces/docs/milestone.pdf)): report on initial phases of project (for Springboard)  
+`docs/consolidated.pdf` ([web view](https://andy.harless.us/paces/docs/consolidated.pdf)): full project report (for Springboard)  
+`docs/paces_presentation.pdf` ([web view](https://andy.harless.us/paces/docs/paces_presentation.pdf)): project report in slideshow form (for Springboard)  
+`docs/summary.pdf` ([web view](https://andy.harless.us/paces/docs/summary.pdf)): abbreviated report  
+`docs/wrangling.pdf` ([web view](https://andy.harless.us/paces/docs/wrangling.pdf)): description of how data were prepared
 
  
 ## Results
@@ -88,7 +92,7 @@ Validation accuracy is about 91% for the best model so far, and it appears to be
     - Save fitted weights for future inference.
 - (done) ~Add file descriptions to this readme.~
 - Study how to combine models. (What works best? mean probability? logit mean? median? something else?)
-- (partly done) Add analyses, descriptions, etc. to conform to Springboard requirements.
+- (done) ~Add analyses, descriptions, etc. to conform to Springboard requirements.~
 - (done) ~Add description of results to this readme.~
 - Try adjusting tempo tolerance.
 - Improve code documentation.
