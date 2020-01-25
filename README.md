@@ -17,7 +17,7 @@ I'm referring to this problem as the "pace compatibility" problem, or sometimes 
 3. Divide each song into segments of about 25 seconds each. Ignore the first and last segment of each song.
 4. Using [LibROSA](https://librosa.github.io/librosa/), calculate a [tempogram](https://musicinformationretrieval.com/tempo_estimation.html) for each song segment, and find the peaks of the tempogram's time-averaged means.  Collect a set of all the peaks (rounded to nearest integer) from all the segments of each song.  Use these as "candidate tempos" for the song.
 5. A candidate tempo is "correct" if it is within a certain tolerance (initially 5%) of one of the hand-labeled paces.  The rest are "incorrect."
-6. For use in initial training data, generate the [Mel spectrogram](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum) (as a function of time, produced by LibROSA) for each song.
+6. For use in initial training data, generate the [Mel spectrogram](https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0) (as a function of time, produced by LibROSA) for each song.
 7. To generate each training case, 
      - choose a labeled song (at random or according to a process later to be decided), 
      - choose one of its candidate tempos (at random or...), 
