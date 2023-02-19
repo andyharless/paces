@@ -1,4 +1,4 @@
-# Muisc Pace Compatibility Project
+# Music Pace Compatibility Project
 
 ## The Problem
 
